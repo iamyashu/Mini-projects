@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashu Tech</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://iconarchive.com/download/i43029/oxygen-icons.org/oxygen/Categories-applications-education-university.ico" type="" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Yashu Tech</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="ShowMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome Peep's </h1>
+            <p>Experience the best design's and best custom made<br> responsive web Apps and real time projects.</p>
+            <a href="#" class="main-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+    
+<!-- Course Section -->
+
+    <section class="service" id ="service">
+        <h1>Services We provide</h1>
+        <p class="main-para">As we are emerging as a startup with at most dedication we are providing these services . </p>
+        <div class="row">
+            <div class="service-col">
+                <h3>Web Development</h3>
+                <p class="sub-para"> We design and develop best websites to our clients with clean and elegant designs whcih will be more catchy. The Websites will be developed on basis of their own required customised designs. </p>
+            </div>
+            <div class="service-col">
+                <h3>App Development</h3>
+                <p class="sub-para">Our clients will be very happy with our App design's since we mainly make the app easy to use and with minimal graphics such that everyone can understand them without any flaw. </p>
+            </div>
+            <div class="service-col">
+                <h3>Responsive Design's</h3>
+                <p class="sub-para">We design the best websites which can be very handy in mobiles , laptops , tablets , desktops etc.., which means that can be fit to any screen and can be used with the best designs .  </p>
+            </div>
+        </div>
+    </section>
+    <hr class="cr-hr">
+<!-- Project Section Starts -->
+    <section class="project" id ="project">
+        <h1>Projects We Built</h1>
+        <p> We have designed some games till now and some websites yet to be hosted . Please have a look at them.</p>
+        <div class="row">
+            <div class="project-col">
+                <img src="images/car-game.jpg" alt="">
+                <div class="layer" id="london">
+                    <h3>CAR GAME</h3>  
+                    <a href="https://github.com/iamyashu/Car-Game.git" class="view-btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-col">
+                <img src="images/todo.jpg" alt="">
+                <div class="layer" id="TD">
+                    <h3>TO-DO LIST</h3>
+                    <a href="https://github.com/iamyashu/tusk/tree/master/Todo-list" class="view-btn" target="_blank">View Project</a>   
+                </div>
+            </div>
+            <div class="project-col">
+                <img src="images/tic-tac-toe.jpg" alt="">
+                <div class="layer" id="TTT">
+                    <h3>TIC TAC TOE</h3>
+                    <a href="https://github.com/iamyashu/Car-Game.git" class="view-btn" target="_blank">View Project</a>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function ShowMenu() 
+        {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() 
+        {
+            navlinks.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>
